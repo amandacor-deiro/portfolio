@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+/* Importando as fontes do Google Fonts (adicione isso no topo do seu CSS) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Rouge+Script&display=swap');
+
+/* HEADER-TÍTULO */
+
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente na página */
+    align-items: center; /* Centraliza verticalmente se necessário */
+    padding: 20px 0;
+}
+
+.logo-text {
+    position: relative; /* Isso é crucial para o "Amanda" se alinhar a ele */
+    display: inline-block;
+}
+
+.main-title {
+    font-family: 'Roboto Condensed', sans-serif; /* A fonte fina e alta */
+    font-size: 6rem; /* Ajuste o tamanho conforme necessário */
+    font-weight: 300; /* Leve */
+    color: black;
+    text-transform: uppercase; /* Força maiúsculas */
+    letter-spacing: 2px; /* Espaço entre as letras */
+}
+
+.sub-title {
+    position: absolute; /* ISSO permite que ele fique por cima */
+    font-family: 'Monsieur La Doulaise', cursive; /* A fonte cursiva */
+    font-size: 4.5rem; /* Um pouco menor que o título principal */
+    color: #ff69b4ab; /* O rosa (use sua cor exata aqui) */
+    
+    /* Posicionamento exato */
+    bottom: -40px; /* Empurra para baixo para sobrepor a linha inferior */
+    left: 230px; /* Alinha um pouco à direita */
+    
+    /* Efeito de sobreposição (z-index) */
+    z-index: 2; /* Garante que fique por cima do título preto */
+}
+
+/* HEADER-MENU */
+
+nav {
+    background-color: pink;
+    padding: 0.05rem;
+    border-radius: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* SOBRE MIM */
+
+/* HABILIDADES */
+
+/* PROJETOS */
+
+/* CONTATOS */
