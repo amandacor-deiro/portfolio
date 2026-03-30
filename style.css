@@ -14,8 +14,16 @@
     --cor-suave: #FFF0F5;
 }
 
+/* MUDANÇAS GERAIS */
+
 body {
     background-color: var(--cor-fundo);
+}
+
+header, nav, section {
+    width: 90%; /* Ocupa 90% da tela em dispositivos pequenos */
+    max-width: 1000px; /* Não deixa ficar largo demais em monitores grandes */
+    margin: 20px auto; /* O 'auto' centraliza a div na horizontal */
 }
 
 /* HEADER-TÍTULO */
@@ -78,6 +86,8 @@ nav {
 nav a {
     text-decoration: none;
     color: white;
+    font-weight: bolder;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* SOBRE MIM */
@@ -85,11 +95,15 @@ nav a {
 section {
     border: 2px solid #0000009c;
     border-radius: 10px;
-    margin: 0 3rem;
 }
 
 section h2 {
     padding: 10px;
+    text-align: center;
+}
+
+section p {
+    padding: 0px 40px;
 }
 
 /* HABILIDADES */
