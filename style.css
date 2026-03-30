@@ -1,9 +1,22 @@
 @charset "UTF-8";
 
-/* Importando as fontes do Google Fonts (adicione isso no topo do seu CSS) */
+/* FONTES DO TÍTULO */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&family=Rouge+Script&display=swap');
+
+/* CORES */
+
+:root {
+    --cor-fundo: #FAFAFA;
+    --cor-texto: #1A1A1A;
+    --cor-destaque: #FF69B4; /* O seu rosa */
+    --cor-suave: #FFF0F5;
+}
+
+body {
+    background-color: var(--cor-fundo);
+}
 
 /* HEADER-TÍTULO */
 
@@ -12,6 +25,9 @@
     justify-content: center; /* Centraliza horizontalmente na página */
     align-items: center; /* Centraliza verticalmente se necessário */
     padding: 20px 0;
+    border: 2px solid #0000009c;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 .logo-text {
@@ -20,7 +36,7 @@
 }
 
 .main-title {
-    font-family: 'Roboto Condensed', sans-serif; /* A fonte fina e alta */
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 6rem; /* Ajuste o tamanho conforme necessário */
     font-weight: 300; /* Leve */
     color: black;
@@ -48,6 +64,8 @@ nav {
     background-color: pink;
     padding: 0.05rem;
     border-radius: 10px;
+    border: 2px solid #0000009c;
+    margin-bottom: 20px;
 }
 
 .nav-links {
@@ -63,6 +81,16 @@ nav a {
 }
 
 /* SOBRE MIM */
+
+section {
+    border: 2px solid #0000009c;
+    border-radius: 10px;
+    margin: 0 3rem;
+}
+
+section h2 {
+    padding: 10px;
+}
 
 /* HABILIDADES */
 
