@@ -12,12 +12,17 @@
     --cor-texto: #424242;
     --cor-destaque: #FFCDCD; /* O seu rosa */
     --cor-suave: #FFF0F5;
+    --cor-contraste: #73CFD9;
 }
 
 /* MUDANÇAS GERAIS */
 
 body {
     background-color: var(--cor-fundo);
+}
+
+mark {
+    background-color: var(--cor-contraste);
 }
 
 header, nav, section {
@@ -107,6 +112,7 @@ a:hover {
 .sobre-titulo {
     padding: 10px;
     text-align: center;
+    color: var(--cor-texto);
 }
 
 section p {
